@@ -1,4 +1,4 @@
-#!/data/data/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 [[ -n $2 ]] && echo 'Пробелы запрещены!' && exit 1
 if [[ -f ~/switch-lan-play/src/build/lanplay ]]; then
     [[ -z $1 ]] && echo -n 'Введите адрес сервера:' && read server || server="$1"
