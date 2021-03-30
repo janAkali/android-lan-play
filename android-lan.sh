@@ -3,7 +3,8 @@
 if [[ -f ~/switch-lan-play/src/build/lanplay ]]; then
     [[ -z $1 ]] && echo -n 'Введите адрес сервера:' && read server || server="$1"
     [[ -z $server ]] && echo 'Адрес сервера не может быть пустым!' && exit 1
-    sudo ~/switch-lan-play/src/build/lanplay --relay-server-addr $server && exit
+    sudo ~/switch-lan-play/build/src/lanplay --relay-server-addr $server && exit
+fi
 apt update
 apt upgrade -y
 apt install libpcap -y
