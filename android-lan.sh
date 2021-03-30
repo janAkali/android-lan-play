@@ -1,7 +1,10 @@
 #!/bin/bash
+[[ -n $2 ]] && echo 'Пробелы запрещены!' && exit 1
+[[ -f ~/switch-lan-play/src/build/lanplay ]] && sudo ~/switch-lan-play/src/build/lanplay --relay-server-addr $1 && exit
 apt update
-apt install libpcap-dev -y
-apt install libuv-dev -y
+apt upgrade -y
+apt install libpcap -y
+apt install libuv -y
 pkg install cmake -y
 pkg install tsu -y
 pkg install git -y
@@ -9,16 +12,5 @@ git clone https://github.com/spacemeowx2/switch-lan-play.git
 cd switch-lan-play
 mkdir build
 cd build
-cmake ..
+cmake -DCMAKE_BUILD_TYPE=Release ..
 make
-cd
-git clone https://gitlab.com/st42/termux-sudo.git
-pkg install ncurses-utils -y
-cd termux-sudo
-cat sudo > /data/data/com.termux/files/usr/bin/sudo
-chmod 700 /data/data/com.termux/files/usr/bin/sudo
-cd
-wget http://switch.retrogamer.tech/switch
-wget http://switch.retrogamer.tech/ps4
-chmod 755 switch
-chmod 755 ps4
