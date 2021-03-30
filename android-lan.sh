@@ -3,7 +3,8 @@
 if [[ -f ~/switch-lan-play/build/src/lan-play ]]; then
     [[ -z $1 ]] && echo -n 'Введите адрес сервера:' && read server || server="$1"
     [[ -z $server ]] && echo 'Адрес сервера не может быть пустым!' && exit 1
-    sudo ~/switch-lan-play/build/src/lan-play --relay-server-addr $server && exit
+    sudo ~/switch-lan-play/build/src/lan-play --relay-server-addr $server
+    exit
 fi
 apt update
 apt upgrade -y
