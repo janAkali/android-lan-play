@@ -28,12 +28,16 @@ Primary DNS 163.172.141.219
 Secondary DNS 207.246.121.77
 ```
 2. download ldn-mitm "https://github.com/spacemeowx2/ldn_mitm/releases/latest"
-3. extract and put it on SDcard (don't forget to clear the archive bit if necessary)
+3. extract it in root of your SDcard (don't forget to clear the archive bit in Hekate if necessary)
 4. reboot switch
 
 ### Connect to Servers: 
 * Launch Termux and enter `bash switchlan`, script will ask you for server ip and root privileges
+* or enter `bash switchlan server's address` to skip asking part, example: `bash switchlan edgymin.ga:11451`
 * If connection was successful you'll see "Server IP: x.x.x.x" at the end
 
 ### To Disconnect:
 * Long tap anywhere in Termux -> more -> kill process; or press "exit" in Termux's notification
+
+### How to delete/reinstall lanplay:
+enter `rm -rf ~/switch-lan-play; rm ~/switchlan` in Termux
