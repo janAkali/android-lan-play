@@ -1,5 +1,3 @@
-# android-lan-play
-
 ## How to setup LAN-Play on Android phone/tablet
 
 REQUIRES ROOT and Android 7.0+
