@@ -2,7 +2,7 @@
 [[ -n $2 ]] && echo 'No spaces! / Без Пробелов!' && exit 1
 if [[ -f ~/switch-lan-play/build/src/lan-play ]]; then
     [[ -z $1 ]] && echo -n 'Server / Сервер:' && read server || server="$1"
-    [[ -z $server ]] && echo 'Server can't be blank! / Адрес Сервера не может быть пустым!' && exit 1
+    [[ -z $server ]] && echo 'Server cant be blank! / Адрес Сервера не может быть пустым!' && exit 1
     sudo ~/switch-lan-play/build/src/lan-play --relay-server-addr $server
     exit
 fi
