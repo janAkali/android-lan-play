@@ -7,7 +7,7 @@ REQUIRES ROOT and Android 7.0+
 2. Launch Termux app, you'll see a black terminal window.
 3. Next, enter these 3 commands one by one:
 ```
-wget tinyurl.com/switchlan
+curl -L tinyurl.com/switchlan > switchlan
 chmod +x switchlan
 bash switchlan
 ```
