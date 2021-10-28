@@ -11,6 +11,7 @@ curl -L tinyurl.com/switchlan > switchlan
 chmod +x switchlan
 bash switchlan
 ```
+3.5. choose what version you want to build (choose stable if latest doesn't compile) 
 4. It'll setup additional packages and compile lanplay from source (1-5 minutes)
 5. Start WiFi tethering (or connect your phone to wifi)
 
