@@ -6,12 +6,14 @@ REQUIRES ROOT and Android 7.0+
 1. Install a latest Termux from f-droid - "https://f-droid.org/en/packages/com.termux/"
 2. Launch Termux app, you'll see a black terminal window.
 3. Next, enter these 3 commands one by one:
+
+(when prompted):choose what version you want to build (choose stable if latest doesn't compile)
+
 ```
 curl -L tinyurl.com/switchlan > switchlan
 chmod +x switchlan
 bash switchlan
 ```
-3.5. choose what version you want to build (choose stable if latest doesn't compile) 
 4. It'll setup additional packages and compile lanplay from source (1-5 minutes)
 5. Start WiFi tethering (or connect your phone to wifi)
 
