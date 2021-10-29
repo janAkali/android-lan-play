@@ -7,7 +7,7 @@ REQUIRES ROOT and Android 7.0+
 2. Launch Termux app, you'll see a black terminal window.
 3. Next, enter these 3 commands one by one:
 
-(when prompted):choose what version you want to build (choose stable if latest doesn't compile)
+#(when prompted):choose what version you want to build (choose stable if latest doesn't compile)
 
 ```
 curl -L tinyurl.com/switchlan > switchlan
