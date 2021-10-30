@@ -55,7 +55,7 @@ case $version in
 		;;
 esac
 
-cd switch-lan-play || `echo 'Error cloning repo!' && exit 1`
+cd switch-lan-play || (echo 'Error cloning repo!' && exit 1)
 rm -rf ./build; mkdir ./build; cd ./build
 cmake -DCMAKE_BUILD_TYPE=Debug ..
 make
