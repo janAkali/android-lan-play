@@ -43,9 +43,9 @@ case $version in
 	  git clone --depth 1 --branch $stable_tag https://github.com/spacemeowx2/switch-lan-play.git
 		;;
 	2)if [[ -d ~/switch-lan-play ]]; then
-              git pull https://github.com/spacemeowx2/switch-lan-play.git && touch ~/switch-lan-play
+              git pull https://github.com/spacemeowx2/switch-lan-play.git
           else
-              git clone https://github.com/spacemeowx2/switch-lan-play.git && touch ~/switch-lan-play
+              git clone https://github.com/spacemeowx2/switch-lan-play.git
           fi
 		;;
 	*)echo "Error: wrong version"
