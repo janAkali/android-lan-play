@@ -26,6 +26,7 @@ apt upgrade -y
 apt install libpcap -y
 apt install libuv -y
 pkg install cmake -y
+pkg install binutils -y
 pkg install tsu -y
 pkg install git -y
 
