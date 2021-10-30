@@ -43,7 +43,9 @@ case $version in
 	  git clone --depth 1 --branch $stable_tag https://github.com/spacemeowx2/switch-lan-play.git
 		;;
 	2)if [[ -d ~/switch-lan-play ]]; then
+              cd ~/switch-lan-play
               git pull https://github.com/spacemeowx2/switch-lan-play.git
+              cd ..
           else
               git clone https://github.com/spacemeowx2/switch-lan-play.git
           fi
