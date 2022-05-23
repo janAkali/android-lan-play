@@ -10,7 +10,7 @@ REQUIRES ROOT and Android 7.0+
 #(when prompted):choose what version you want to build (choose stable if latest doesn't compile)
 
 ```
-curl -L tinyurl.com/switchlan > switchlan
+curl -LO tinyurl.com/switchlan
 chmod +x switchlan
 bash switchlan
 ```
