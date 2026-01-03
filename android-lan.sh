@@ -54,7 +54,7 @@ esac
 
 cd switch-lan-play || (echo 'Error cloning repo!' && exit 1)
 rm -rf ./build; mkdir ./build; cd ./build
-cmake -DCMAKE_BUILD_TYPE=Debug .. || (echo "Error configuring lan-play" && exit 1)
+cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_POLICY_VERSION_MINIMUM=3.5 .. || (echo "Error configuring lan-play" && exit 1)
 make || (echo "Error building lan-play" && exit 1)
 clear
 echo -e "\nDone!/Готово!\nNow you can launch app with './switchlan'\nТеперь можно запустить программу: './switchlan'"
